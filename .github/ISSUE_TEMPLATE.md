@@ -1,4 +1,4 @@
-Before filing a bug or feature request, please check if a related issue already exists [here](https://github.com/philippgille/hello-netcoreapp/issues).
+Before filing a bug or feature request, please check if a related issue already exists [here](https://github.com/cuserroro/hello-netcoreapp/issues).
 
 If this is a feature request, describe the feature and add some info and links about how it could be implemented.
 

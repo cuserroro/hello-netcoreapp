@@ -4,14 +4,14 @@ Found a bug in our code, or have an idea for a feature? Here are some notes on h
 
 ## Security Issues
 
-***Any security issues should be submitted directly to <philipp.gille@gmail.com>***
+***Any security issues should be submitted directly to <roberto.reff@poligram.com>***
 
 In order to determine whether you are dealing with a security issue, ask yourself these two questions:
 
 1. Can I access something that's not mine, or something I shouldn't have access to? 
 2. Can I disable something for other people?
 
-If the answer to either of those two questions are "yes", then you're probably dealing with a security issue. Note that even if you answer "no" to both questions, you may still be dealing with a security issue, so if you're unsure, just email us at <philipp.gille@gmail.com>.
+If the answer to either of those two questions are "yes", then you're probably dealing with a security issue. Note that even if you answer "no" to both questions, you may still be dealing with a security issue, so if you're unsure, just email us at <roberto.reff@poligram.com>.
 
 ## Other Issues
 

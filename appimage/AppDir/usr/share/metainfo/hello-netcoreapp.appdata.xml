@@ -6,7 +6,7 @@
      Note: According to build time warnings by AppImage tool, appstreamcli must be installed for the tool to properly include this metadata
 -->
 <component type="console-application">
-  <id>com.philippgille.hello-netcoreapp</id>
+  <id>com.cuserroro.hello-netcoreapp</id>
   <metadata_license>GPL</metadata_license>
   <name>hello-netcoreapp</name>
   <summary>Print Hello World</summary>
@@ -18,9 +18,9 @@
   <categories>
     <category>Development</category>
   </categories>
-  <url type="homepage">https://github.com/philippgille/hello-netcoreapp</url>
+  <url type="homepage">https://github.com/cuserroro/hello-netcoreapp</url>
   <!-- Not sure if this works for console applications
-  <launchable type="desktop-id">com.philippgille.hello-netcoreapp.desktop</launchable>
+  <launchable type="desktop-id">com.cuserroro.hello-netcoreapp.desktop</launchable>
   -->
   <releases>
     <release version="0.1.0"/>
@@ -29,5 +29,5 @@
     <binary>hello-netcoreapp</binary>
   </provides>
   <project_license>GPL</project_license>
-  <developer_name>Philipp Gille</developer_name>
+  <developer_name>Roberto Reff</developer_name>
 </component>

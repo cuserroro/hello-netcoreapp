@@ -6,4 +6,4 @@ This directory contains documentation about the *hello-netcoreapp* project in [M
 Contents
 --------
 
-- [Getting started](https://github.com/philippgille/hello-netcoreapp/blob/master/docs/getting-started.md)
+- [Getting started](https://github.com/cuserroro/hello-netcoreapp/blob/master/docs/getting-started.md)

@@ -17,7 +17,7 @@ deploy:
   # But when you fork this repository, you should set it to false, to be forced to create new tags
   # so that you have a release history on GitHub, for example so that customers
   # can report a bug in a release and you can figure out which tag that was.
-  force_update: true
+  force_update: false
   # As of 2017-05-17, if you don't set a tag, AppVeyor will create a tag for you,
   # which can lead to a loop of tags and builds + deploys if your deployment condition is
   # "appveyor_repo_tag: true".

@@ -23,7 +23,7 @@ deploy:
   # But when you fork this repository, you should set it to false, to be forced to create new tags
   # so that you have a release history on GitHub, for example so that customers
   # can report a bug in a release and you can figure out which tag that was.
-  overwrite: true
+  overwrite: false
   skip_cleanup: true
   # Both target_commitish and tag_name are needed to tie the release to a specific tag
   target_commitish: $TRAVIS_COMMIT
