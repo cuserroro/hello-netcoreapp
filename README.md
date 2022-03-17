@@ -1,13 +1,13 @@
 Windows build | Linux build | Docker | Code quality | Test coverage
 :------------ | :---------- | :----- | :----------- | :------------
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/h4PUsutEzJ2Mr114UyRb/branch/master?svg=true)](https://ci.appveyor.com/project/philippgille/hello-netcoreapp/branch/master) | [![Travis CI build Status](https://travis-ci.org/philippgille/hello-netcoreapp.svg?branch=master)](https://travis-ci.org/philippgille/hello-netcoreapp) | [![Docker Hub automated build](https://img.shields.io/badge/Docker-automated-008bb8.svg)](https://hub.docker.com/r/philippgille/hello-netcoreapp/) | [![Codacy code quality](https://api.codacy.com/project/badge/Grade/27c2c07b54b24239b203382131d5d44b)](https://www.codacy.com/app/philippgille/hello-netcoreapp)<br/>[![Better Code Hub code quality](https://bettercodehub.com/edge/badge/philippgille/hello-netcoreapp?branch=master)](https://bettercodehub.com/) | Boilerplate<br/>Nothing to test
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/h4PUsutEzJ2Mr114UyRb/branch/master?svg=true)](https://ci.appveyor.com/project/cuserroro/hello-netcoreapp/branch/master) | [![Travis CI build Status](https://travis-ci.org/cuserroro/hello-netcoreapp.svg?branch=master)](https://travis-ci.org/cuserroro/hello-netcoreapp) | [![Docker Hub automated build](https://img.shields.io/badge/Docker-automated-008bb8.svg)](https://hub.docker.com/r/cuserroro/hello-netcoreapp/) | [![Codacy code quality](https://api.codacy.com/project/badge/Grade/27c2c07b54b24239b203382131d5d44b)](https://www.codacy.com/app/cuserroro/hello-netcoreapp)<br/>[![Better Code Hub code quality](https://bettercodehub.com/edge/badge/cuserroro/hello-netcoreapp?branch=master)](https://bettercodehub.com/) | Boilerplate<br/>Nothing to test
 
 
 https://app.travis-ci.com/github/cuserroro/hello-netcoreapp
 
 Binaries
 
-[![GitHub Releases](https://img.shields.io/github/release/philippgille/hello-netcoreapp.svg)](https://github.com/philippgille/hello-netcoreapp/releases)
+[![GitHub Releases](https://img.shields.io/github/release/cuserroro/hello-netcoreapp.svg)](https://github.com/cuserroro/hello-netcoreapp/releases)
 
 hello-netcoreapp
 ================
@@ -93,31 +93,31 @@ Build
 
 #### AppVeyor
 
-This repository contains `.appveyor.yml`, which is a configuration file for the CI / CD cloud service [AppVeyor](https://ci.appveyor.com/project/philippgille/hello-netcoreapp).
+This repository contains `.appveyor.yml`, which is a configuration file for the CI / CD cloud service [AppVeyor](https://ci.appveyor.com/project/cuserroro/hello-netcoreapp).
 
 It's configured to do the following:
 
 1. Run the build script `build.ps1`, which produces `*.zip` archives for FDD and SCD, as well as a Chocolatey package
 2. If a *Git tag* was pushed:
-    - Deploy all artifacts to [this repository's GitHub Releases](https://github.com/philippgille/hello-netcoreapp/releases)
+    - Deploy all artifacts to [this repository's GitHub Releases](https://github.com/cuserroro/hello-netcoreapp/releases)
         > Note: If the release already exists, existing files get overwritten (not all, only those where a new file was built, keeping files from the Travis CI build in case it finished first)
     
     - Deploy the Chocolatey package to [this app's MyGet feed](https://www.myget.org/gallery/hello-netcoreapp)
 
 #### Travis CI
 
-This repository contains `.travis.yml`, which is a configuration file for the CI / CD cloud service [Travis CI](https://travis-ci.org/philippgille/hello-netcoreapp).
+This repository contains `.travis.yml`, which is a configuration file for the CI / CD cloud service [Travis CI](https://travis-ci.org/cuserroro/hello-netcoreapp).
 
 It's configured to do the following:
 
 1. Run the build script `build.sh`, which produces `*.tar.gz` archives for FDD and SCD, as well as an AppImage
 2. If a *Git tag* was pushed:
-    - Deploy all artifacts to [this repository's GitHub Releases](https://github.com/philippgille/hello-netcoreapp/releases)
+    - Deploy all artifacts to [this repository's GitHub Releases](https://github.com/cuserroro/hello-netcoreapp/releases)
         > Note: If the release already exists, existing files get overwritten (not all, only those where a new file was built, keeping files from the AppVeyor build in case it finished first)
 
 #### Docker Cloud
 
-The Docker image for Linux containers gets automatically build by Docker Cloud and pushed to the [Docker Hub repository](https://hub.docker.com/r/philippgille/hello-netcoreapp/). This is because Docker Hub itself doesn't support multi-stage builds as of now (2017-07-08).
+The Docker image for Linux containers gets automatically build by Docker Cloud and pushed to the [Docker Hub repository](https://hub.docker.com/r/cuserroro/hello-netcoreapp/). This is because Docker Hub itself doesn't support multi-stage builds as of now (2017-07-08).
 
 ### Locally
 
@@ -174,7 +174,7 @@ Run
 
 You can run the console app either as *FDD*, *SCD*, *Docker container*, *Chocolatey package* or *AppImage*.
 
-All artifacts are available for download from [this repository's GitHub Releases](https://github.com/philippgille/hello-netcoreapp/releases). The Chocolatey package is also available on [this app's MyGet feed](https://www.myget.org/gallery/hello-netcoreapp).
+All artifacts are available for download from [this repository's GitHub Releases](https://github.com/cuserroro/hello-netcoreapp/releases). The Chocolatey package is also available on [this app's MyGet feed](https://www.myget.org/gallery/hello-netcoreapp).
 
 Alternatively you can build the artifacts on your own (see the *Build* section in this README).
 
@@ -206,7 +206,7 @@ Copy the archive (for example `hello-netcoreapp_v0.1.0_linux-x64.zip` or `hello-
 ### Docker container
 
 - The simplest way is to create the Docker container from the Docker image on Docker Hub:
-    - `docker run philippgille/hello-netcoreapp`
+    - `docker run cuserroro/hello-netcoreapp`
         > Note: This currently only works for Linux containers (on either Linux or Windows)
 - Alternatively you can build the image locally (see the *Build* section in this README) and then create a container from the image in the local image cache:
     - For the Linux container: `docker run local/hello-netcoreapp`
@@ -270,7 +270,7 @@ Now you should do the following, so you don't have to enter the full path of the
     1. Edit `~/.bashrc` and add:
         - For FDD: `function hello-netcoreapp() { dotnet $HOME/myPortableApps/hello-netcoreapp/hello-netcoreapp.dll $@; }`
         - For SCD: `function hello-netcoreapp() { $HOME/myPortableApps/hello-netcoreapp/hello-netcoreapp $@; }`
-        - For Docker: `function hello-netcoreapp() { docker run --rm philippgille/hello-netcoreapp $@; }`
+        - For Docker: `function hello-netcoreapp() { docker run --rm cuserroro/hello-netcoreapp $@; }`
     1. Source your bashrc so that the alias becomes available immediately: `source ~/.bashrc`
 - Linux alternative for SCD: Create a symbolic link in a directory that's already in the PATH:
     - `ln -s $HOME/myPortableApps/hello-netcoreapp/hello-netcoreapp /usr/local/bin/hello-netcoreapp`
@@ -292,7 +292,7 @@ Uninstall
     2. Remove the function from your PowerShell profile / `~/.bashrc` in case you set it
 - Docker image:
     1. Delete the container: `docker container rm <id>`
-    2. Delete the image: `docker image rm philippgille/hello-netcoreapp`
+    2. Delete the image: `docker image rm cuserroro/hello-netcoreapp`
     3. Remove the function from your PowerShell profile / `~/.bashrc` in case you set it
 - Chocolatey package:
     - If you installed the [meta package](https://chocolatey.org/docs/chocolatey-faqs#what-is-the-difference-between-packages-no-suffix-as-compared-to-install-portable): `choco uninstall hello-netcoreapp`
